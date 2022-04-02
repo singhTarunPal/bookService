@@ -28,4 +28,7 @@ flask run
       - {  "author": "author55", "id": 5,  "title": "title55"    }
 
 
-
+*Reference*
+ - https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
+ - https://dzone.com/articles/python-flask-code-generator
+ - https://flask.palletsprojects.com/en/2.0.x/quickstart/
