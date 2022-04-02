@@ -64,10 +64,10 @@ def createBook():
     cur.execute("insert into books (id, author, title)  values (?, ?, ?)", (a, b, c))
     con.commit()
     con.close
-    return jsonify(dat)
+    return jsonify({'response':'Success', 'id' : a, 'title' : c, 'author': b })
 
 
-@app.route('/bookdb/books/<bookId>',methods=['PUT'])
+@app.route('/api/books/<bookId>',methods=['PUT'])
 def updateBook(bookId):
     a=request.json['id']
     b=request.json['author']
@@ -84,7 +84,7 @@ def updateBook(bookId):
             cur.execute("update books set author = ? , title = ? where id = '%s'"  %a, (b,c))
             con.commit()
             con.close
-            return jsonify({'response':'Success'})    
+            return jsonify({'response':'Success', 'id' : a,  'author': b, 'title' : c})    
         else:
             return jsonify({'response':'No record found'}) 
 

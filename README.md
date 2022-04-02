@@ -2,6 +2,8 @@
 
 Its a Book Service based on Flask
 
+
+*Running Service*
 flask run
 
 
@@ -17,13 +19,13 @@ flask run
  - POST
     - http://localhost:5000/api/books    
       - add a new book
-      - { "author": "author5",        "created": "2022-03-28 15:08:39",        "id": 5,        "title": "titke5"    }
+      - { "author": "author5",   "id": 5,  "title": "titke5"    }
 
  
  - PUT
     - http://localhost:5000/api/books /4
       - update a new book
-      - {  "author": "author55", "created": "2022-03-28 15:08:39", "id": 5,  "title": "title55"    }
+      - {  "author": "author55", "id": 5,  "title": "title55"    }
 
 
 
