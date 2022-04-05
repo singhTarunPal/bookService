@@ -1,8 +1,10 @@
 # bookService
 
-*Description:* Its a Book Service based on Flask
+*Description:* Its a Book Service to manage the book records
 
 *Author:* Tarun Pal Singh
+
+*Design:* ITs a Microservice based on Flask and SQLite 
 
 
 ## Setting up env
@@ -25,13 +27,13 @@
  - GET
   http://127.0.0.1:5000/api/books  
     -Get all the books
-    -Sample Response: [ {"author": "Author1","created": "2022-04-03 15:10:41","id": 1, "title": "Title1"},
+    -	Sample Response: [ {"author": "Author1","created": "2022-04-03 15:10:41","id": 1, "title": "Title1"},
 			{"author": "Author2","created": "2022-04-03 15:11:41","id": 2, "title": "Title2"}]
 
 - GET
   http://127.0.0.1:5000/api/books/<id>  
     -Get a book with specific Id
-    -Sample Response: [ {"author": "Author2","created": "2022-04-03 15:11:41","id": 2, "title": "Title2"}]
+    -	Sample Response: [ {"author": "Author2","created": "2022-04-03 15:11:41","id": 2, "title": "Title2"}]
 
  
  - POST
