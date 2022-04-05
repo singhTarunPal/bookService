@@ -2,6 +2,17 @@
 
 Its a Book Service based on Flask
 
+*Setting up env*
+#Installing Vitual ENV
+pip install virtualenv
+#Create virtualenv for windows
+py -3 -m venv venv
+#Activate virualenv for windows
+venv\Scripts\activate
+#Install Flask on the enviroment
+pip install flask
+#Upgrading PIP
+python -m pip install --upgrade pip
 
 *Running Service*
 flask run
@@ -11,19 +22,23 @@ flask run
  - GET
   http://127.0.0.1:5000/api/books  
     -Get all the books
+    -Sample Response: [ {"author": "Author1","created": "2022-04-03 15:10:41","id": 1, "title": "Title1"},
+			{"author": "Author2","created": "2022-04-03 15:11:41","id": 2, "title": "Title2"}]
 
 - GET
   http://127.0.0.1:5000/api/books/<id>  
-    -Get a bood with specific Id
+    -Get a book with specific Id
+    -Sample Response: [ {"author": "Author2","created": "2022-04-03 15:11:41","id": 2, "title": "Title2"}]
+
  
  - POST
     - http://localhost:5000/api/books    
       - add a new book
-      - { "author": "author5",   "id": 5,  "title": "titke5"    }
+      - { "author": "author5",   "id": 5,  "title": "title5"    }
 
  
  - PUT
-    - http://localhost:5000/api/books /4
+    - http://localhost:5000/api/books/4
       - update a new book
       - {  "author": "author55", "id": 5,  "title": "title55"    }
 
