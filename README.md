@@ -1,24 +1,27 @@
 # bookService
 
-Its a Book Service based on Flask
+*Description:* Its a Book Service based on Flask
 
-*Setting up env*
-#Installing Vitual ENV
-pip install virtualenv
-#Create virtualenv for windows
-py -3 -m venv venv
-#Activate virualenv for windows
-venv\Scripts\activate
-#Install Flask on the enviroment
-pip install flask
-#Upgrading PIP
-python -m pip install --upgrade pip
-
-*Running Service*
-flask run
+*Author:* Tarun Pal Singh
 
 
-*API*
+## Setting up env
+ - Installing Vitual ENV
+ 	- pip install virtualenv
+ - Create virtualenv for windows
+ 	- py -3 -m venv venv
+ - Activate virualenv for windows
+ 	- venv\Scripts\activate
+ - Install Flask on the enviroment
+ 	- pip install flask
+ - Upgrading PIP
+ 	- python -m pip install --upgrade pip
+
+## Running Service
+ - flask run
+
+
+## API
  - GET
   http://127.0.0.1:5000/api/books  
     -Get all the books
@@ -43,7 +46,7 @@ flask run
       - {  "author": "author55", "id": 5,  "title": "title55"    }
 
 
-*Reference*
+## Reference
  - https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
  - https://dzone.com/articles/python-flask-code-generator
  - https://flask.palletsprojects.com/en/2.0.x/quickstart/
