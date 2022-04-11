@@ -14,19 +14,11 @@ def get_db_conn():
     conn.row_factory = sqlite3.Row
     return conn
 
-empDB=[
- {
- 'id':'101',
- 'name':'Saravanan S',
- 'title':'Technical Leader'
- },
- {
- 'id':'201',
- 'name':'Rajkumar P',
- 'title':'Sr Software Engineer'
- }
- ]
-
+@app.route('/')
+def hello():
+	return "welcome to the flask app for books-By Tarun"
+	
+	
 @app.route('/api/books',methods=['GET'])
 def getAllBooks():    
     con = get_db_conn()
@@ -103,5 +95,5 @@ def deleteEmp(bookId):
     con.close
     return jsonify({'response':'Success'})
 
-if __name__ == '__main__':
- app.run()
+if __name__ == "__main__":
+	app.run(host ='0.0.0.0', port = 5000, debug = True)
