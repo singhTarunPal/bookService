@@ -4,7 +4,7 @@
 
 *Author:* Tarun Pal Singh
 
-*Design:* ITs a Microservice based on Flask and SQLite 
+*Design:* Its a Microservice based on Flask and SQLite 
 
 
 ## Setting up env
